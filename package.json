@@ -22,7 +22,8 @@
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
-    "ios": "react-native run-ios --simulator='iPhone 6s'"
+    "ios": "react-native run-ios --simulator='iPhone 6s'",
+    "link-assets": "link-assets.sh"
   },
   "jest": {
     "preset": "react-native",
