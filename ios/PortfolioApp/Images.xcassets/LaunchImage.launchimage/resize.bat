@@ -1,7 +1,7 @@
 @echo off
-
+rem 1242 x 2208
+call scale.bat -source Default-Portrait-736h@3x.png -target Default-667h@2x.png -max-height 1134 -max-width 750 -keep-ratio no -force yes
 call scale.bat -source Default-Portrait-736h@3x.png -target Default-568h@2x.png  -max-height 1136 -max-width 640 -keep-ratio no -force yes
-call scale.bat -source Default-Portrait-736h@3x.png -target Default-667h@2x.png  -max-height 1134 -max-width 750 -keep-ratio no -force yes
 call scale.bat -source Default-Portrait-736h@3x.png -target Default-Portrait.png  -max-height 1024 -max-width 768 -keep-ratio no -force yes
 call scale.bat -source Default-Portrait-736h@3x.png -target Default-Portrait@2x.png  -max-height 2048 -max-width 1536 -keep-ratio no -force yes
 call scale.bat -source Default-Portrait-736h@3x.png -target Default@2x.png  -max-height 960 -max-width 640 -keep-ratio no -force yes
