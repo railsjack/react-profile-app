@@ -1,4 +1,4 @@
-package com.nativebasekitchensink;
+package com.portfolioapp;
 
 import android.app.Application;
 
