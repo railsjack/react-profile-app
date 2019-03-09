@@ -1,0 +1,1 @@
+cp -Rf ./mobile-tpl/ios/NativebaseKitchenSink/images.xcassets/ ./ios/PortfolioApp/images.xcassets/
