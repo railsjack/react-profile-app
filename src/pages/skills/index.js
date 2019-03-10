@@ -18,11 +18,23 @@ import styles from "./styles";
 const datas = [
 	{
 		route: "SkillFrameworks",
-		text: "Frameworks and Tools"
+		text: "Frameworks bnd Tools",
+		icon: "md-business"
 	},
 	{
 		route: "SkillProgramming",
-		text: "Programming"
+		text: "Programming",
+		icon: "md-thumbs-up"
+	},
+	{
+		route: "SkillServer",
+		text: "Server & Networking",
+		icon: "md-cloud"
+	},
+	{
+		route: "SkillProfession",
+		text: "Professional Skills",
+		icon: "md-code"
 	}
 ];
 
@@ -40,7 +52,7 @@ class Skills extends Component {
 						</Button>
 					</Left>
 					<Body>
-						<Title>Skills</Title>
+						<Title>My Skills</Title>
 					</Body>
 					<Right />
 				</Header>
@@ -54,7 +66,8 @@ class Skills extends Component {
 								onPress={() => this.props.navigation.navigate(data.route)}
 							>
 								<Left>
-									<Text>
+									<Icon name={data.icon}  style={{ fontSize: 20, lineHeight: 30, marginRight: 10 }} />
+									<Text style={{ fontSize: 20 }}>
 										{data.text}
 									</Text>
 								</Left>

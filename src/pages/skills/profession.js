@@ -19,7 +19,7 @@ import {
 
 import styles from "./styles";
 
-class SkillProgramming extends Component {
+class SkillProfession extends Component {
   render() {
     return (
       <Container style={styles.container}>
@@ -30,7 +30,7 @@ class SkillProgramming extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Programming</Title>
+            <Title>Professional Skills</Title>
           </Body>
         </Header>
 
@@ -39,24 +39,7 @@ class SkillProgramming extends Component {
             <CardItem>
               <Left>
                 <Text>
-                  HTML5 / CSS3 / jQuery / AJAX / PHP / C++ / C# / JAVA / RUBY / PYTHON
-                </Text>
-              </Left>
-              <Right>
-                <Text>
-                  95%
-                </Text>
-              </Right>
-            </CardItem>
-            <CardItem style={ styles.cardItem }>
-              <Progress.Bar id="progressBar"
-                style={{ flex: 1, alignSelf: 'stretch' }}
-                progress={0.95} width={ null } height={ 10 } />
-            </CardItem>
-            <CardItem>
-              <Left>
-                <Text>
-                  Database ( Amazon RDS techs, MySQL, SQLite, NoSQL, MongoDB, PostgreSQL )
+                  Communication
                 </Text>
               </Left>
               <Right>
@@ -66,14 +49,31 @@ class SkillProgramming extends Component {
               </Right>
             </CardItem>
             <CardItem style={ styles.cardItem }>
-              <Progress.Bar id="progressBar2"
+              <Progress.Bar id="progressBar"
                 style={{ flex: 1, alignSelf: 'stretch' }}
                 progress={0.90} width={ null } height={ 10 } />
             </CardItem>
             <CardItem>
               <Left>
                 <Text>
-                  Testing &amp; Web Services ( RSpec, Cucumber, Jasmine, RESTful APIs, Microservices, SOAP, JSON )
+                  Leadership
+                </Text>
+              </Left>
+              <Right>
+                <Text>
+                  75%
+                </Text>
+              </Right>
+            </CardItem>
+            <CardItem style={ styles.cardItem }>
+              <Progress.Bar id="progressBar2"
+                style={{ flex: 1, alignSelf: 'stretch' }}
+                progress={0.75} width={ null } height={ 10 } />
+            </CardItem>
+            <CardItem>
+              <Left>
+                <Text>
+                  Project Management
                 </Text>
               </Left>
               <Right>
@@ -90,19 +90,19 @@ class SkillProgramming extends Component {
             <CardItem>
               <Left>
                 <Text>
-                  Script Build Automation ( Gulp, NodeJs, Grunt, Yarn )
+                  Software Design & Architecture
                 </Text>
               </Left>
               <Right>
                 <Text>
-                  85%
+                  96%
                 </Text>
               </Right>
             </CardItem>
             <CardItem style={ styles.cardItem }>
               <Progress.Bar id="progressBar4"
                 style={{ flex: 1, alignSelf: 'stretch' }}
-                progress={0.85} width={ null } height={ 10 } />
+                progress={0.96} width={ null } height={ 10 } />
             </CardItem>
           </Card>
         </Content>
@@ -111,4 +111,5 @@ class SkillProgramming extends Component {
   }
 }
 
-export default SkillProgramming;
+export default SkillProfession;
+

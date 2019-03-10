@@ -6,6 +6,9 @@ import Home from "./pages/home/";
 import Skills from "./pages/skills/";
 import SkillFrameworks from "./pages/skills/frameworks";
 import SkillProgramming from "./pages/skills/programming";
+import SkillServer from "./pages/skills/server";
+import SkillProfession from "./pages/skills/profession";
+
 import SideBar from "./pages/sidebar";
 
 const Drawer = createDrawerNavigator(
@@ -28,6 +31,8 @@ const AppNavigator = createStackNavigator(
 
 		SkillFrameworks: { screen: SkillFrameworks },
 		SkillProgramming: { screen: SkillProgramming },
+		SkillServer: { screen: SkillServer },
+		SkillProfession: { screen: SkillProfession },
 	},
 	{
 		initialRouteName: "Drawer",
