@@ -24,7 +24,7 @@ const datas = [
   },
   {
     name: "Experiences",
-    route: "Anatomy",
+    route: "Experiences",
     icon: "md-code-working",
     bg: "#C5F442"
   },

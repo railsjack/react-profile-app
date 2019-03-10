@@ -8,13 +8,15 @@ import SkillFrameworks from "./pages/skills/frameworks";
 import SkillProgramming from "./pages/skills/programming";
 import SkillServer from "./pages/skills/server";
 import SkillProfession from "./pages/skills/profession";
+import Experiences from "./pages/experiences/";
 
 import SideBar from "./pages/sidebar";
 
 const Drawer = createDrawerNavigator(
 	{
 		Home: { screen: Home },
-		Skills: { screen: Skills }
+		Skills: { screen: Skills },
+		Experiences: { screen: Experiences },
 	},
 	{
 		initialRouteName: "Home",
