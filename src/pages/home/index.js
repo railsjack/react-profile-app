@@ -21,16 +21,17 @@ class Home extends Component {
               alignItems: "center",
               marginBottom: 50,
               backgroundColor: "transparent"
-            }}
-          >
+            }}  >
             <H3 style={styles.text}>
               Ruby on Rails, PHP, {"\n"}
               Laravel, CodeIgniter, WordPress
             </H3>
             <View style={{ marginTop: 40 }} />
-            <H3 style={styles.text}>React-Native, Ionic,{"\n"}
-            Angular, iOS, Android</H3>
-            <View style={{ marginTop: 8 }} />
+            <H3 style={styles.text}>
+              React-Native, Ionic,{"\n"}
+              Angular, iOS, Android
+            </H3>
+            <View style={{ marginTop: 10 }} />
           </View>
           <View style={{ marginBottom: 80 }}>
             <Button
