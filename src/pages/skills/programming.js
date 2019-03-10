@@ -15,7 +15,7 @@ import {
 } from "native-base";
 import styles from "./styles";
 
-class Programming extends Component {
+class SkillProgramming extends Component {
   render() {
     return (
       <Container style={styles.container}>
@@ -46,4 +46,4 @@ class Programming extends Component {
   }
 }
 
-export default Programming;
+export default SkillProgramming;

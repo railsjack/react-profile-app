@@ -6,18 +6,15 @@ import Home from "./pages/home/";
 import Skills from "./pages/skills/";
 import SkillFrameworks from "./pages/skills/frameworks";
 import SkillProgramming from "./pages/skills/programming";
-import SideBar from "./pages/sidebar/";
+import SideBar from "./pages/sidebar";
 
 const Drawer = createDrawerNavigator(
 	{
 		Home: { screen: Home },
-		Skills: { screen: Skills },
-		SkillFrameworks: { screen: SkillFrameworks },
-		SkillProgramming: { screen: SkillProgramming },
+		Skills: { screen: Skills }
 	},
 	{
 		initialRouteName: "Home",
-		headerMode: "none",
 		contentOptions: {
 			activeTintColor: "#e91e63"
 		},
@@ -29,8 +26,6 @@ const AppNavigator = createStackNavigator(
 	{
 		Drawer: { screen: Drawer },
 
-		Home: { screen: Home },
-		Skills: { screen: Skills },
 		SkillFrameworks: { screen: SkillFrameworks },
 		SkillProgramming: { screen: SkillProgramming },
 	},

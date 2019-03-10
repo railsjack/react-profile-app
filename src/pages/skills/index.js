@@ -6,14 +6,15 @@ import {
 	Content,
 	Button,
 	Icon,
+	Text,
 	Body,
 	Left,
 	Right,
 	List,
-	ListItem,
-	Text
+	ListItem
 } from "native-base";
 import styles from "./styles";
+
 const datas = [
 	{
 		route: "SkillFrameworks",
@@ -24,37 +25,43 @@ const datas = [
 		text: "Programming"
 	}
 ];
+
 class Skills extends Component {
 	render() {
 		return (
-			<Container>
+			<Container style={styles.container}>
 				<Header>
 					<Left>
 						<Button 
 							transparent
-							onPress={ ()=> this.props.navigation.openDrawer() }>
-							<Icon name="menu"></Icon>
+							onPress={() => this.props.navigation.openDrawer()}
+						>
+							<Icon name="menu" />
 						</Button>
 					</Left>
 					<Body>
 						<Title>Skills</Title>
 					</Body>
-					<Right></Right>
+					<Right />
 				</Header>
-				<Content padder>
+
+				<Content>
 					<List
-						dataArray={ datas }
-						renderRow={ data => 
-							<ListItem button
-								onPress={ ()=> this.props.navigation.navigate(data.route) }>
+						dataArray={datas}
+						renderRow={data => 
+							<ListItem
+								button
+								onPress={() => this.props.navigation.navigate(data.route)}
+							>
 								<Left>
-									<Text>{ data.text }</Text>
+									<Text>
+										{data.text}
+									</Text>
 								</Left>
 								<Right>
-									<Icon name="arrow-forward" style={{ color: '#999' }}></Icon>
+									<Icon name="arrow-forward" style={{ color: '#999' }} />
 								</Right>
-							</ListItem>
-						}
+							</ListItem>}
 					 />
 				</Content>
 			</Container>

@@ -15,7 +15,7 @@ import {
 } from "native-base";
 import styles from "./styles";
 
-class Frameworks extends Component {
+class SkillFrameworks extends Component {
   render() {
     return (
       <Container style={styles.container}>
@@ -46,4 +46,4 @@ class Frameworks extends Component {
   }
 }
 
-export default Frameworks;
+export default SkillFrameworks;
