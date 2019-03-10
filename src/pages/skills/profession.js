@@ -32,6 +32,7 @@ class SkillProfession extends Component {
           <Body>
             <Title>Professional Skills</Title>
           </Body>
+          <Right />
         </Header>
 
         <Content padder>

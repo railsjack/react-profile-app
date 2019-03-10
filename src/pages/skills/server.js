@@ -33,6 +33,7 @@ class SkillServer extends Component {
           <Body>
             <Title>Server & Networking</Title>
           </Body>
+          <Right />
         </Header>
 
         <Content padder>

@@ -32,6 +32,7 @@ class SkillFrameworks extends Component {
           <Body>
             <Title>FRAMEWORKS & TOOLS</Title>
           </Body>
+          <Right />
         </Header>
 
         <Content padder>

@@ -1,39 +1,30 @@
 import React, { Component } from "react";
+import { Image, Dimensions } from "react-native";
 import {
   Container,
   Header,
   Title,
   Content,
   Button,
+  Icon,
+  Card,
+  CardItem,
+  Text,
+  Thumbnail,
   Left,
   Right,
-  Body,
-  Icon,
-  Accordion
+  Body
 } from "native-base";
+import styles from "./styles";
 
-const dataArray = [
-  {
-    title: "First Element",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt itaque adipisci quisquam pariatur qui, reiciendis architecto quod sint incidunt labore nisi totam illum numquam non magnam praesentium, maxime quaerat!"
-  },
-  {
-    title: "Second Element",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt itaque adipisci quisquam pariatur qui, reiciendis architecto quod sint incidunt labore nisi totam illum numquam non magnam praesentium, maxime quaerat!"
-  },
-  {
-    title: "Third Element",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt itaque adipisci quisquam pariatur qui, reiciendis architecto quod sint incidunt labore nisi totam illum numquam non magnam praesentium, maxime quaerat!"
-  }
-];
+const deviceWidth = Dimensions.get("window").width;
+const logo = require("../../../assets/logo.png");
+const cardImage = require("../../../assets/drawer-cover.png");
 
-class AccordionDefault extends Component {
+class NHCardShowcase extends Component {
   render() {
     return (
-      <Container>
+      <Container style={styles.container}>
         <Header>
           <Left>
             <Button transparent onPress={() => this.props.navigation.goBack()}>
@@ -41,16 +32,57 @@ class AccordionDefault extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Default</Title>
+            <Title>Card Showcase</Title>
           </Body>
           <Right />
         </Header>
-        <Content padder style={{ backgroundColor: "white" }}>
-          <Accordion dataArray={dataArray} animation={false} expanded={0} />
+
+        <Content padder>
+          <Card style={styles.mb}>
+            <CardItem bordered>
+              <Left>
+                <Thumbnail source={logo} />
+                <Body>
+                  <Text>NativeBase</Text>
+                  <Text note>April 15, 2016</Text>
+                </Body>
+              </Left>
+            </CardItem>
+
+            <CardItem>
+              <Body>
+                <Image
+                  style={{
+                    alignSelf: "center",
+                    height: 150,
+                    resizeMode: "cover",
+                    width: deviceWidth / 1.18,
+                    marginVertical: 5
+                  }}
+                  source={cardImage}
+                />
+                <Text>
+                  NativeBase is a free and source framework that enable
+                  developers to build high-quality mobile apps using React
+                  Native iOS and Android apps with a fusion of ES6. NativeBase
+                  builds a layer on top of React Native that provides you with
+                  basic set of components for mobile application development.
+                </Text>
+              </Body>
+            </CardItem>
+            <CardItem style={{ paddingVertical: 0 }}>
+              <Left>
+                <Button transparent>
+                  <Icon name="logo-github" />
+                  <Text>4,923 stars</Text>
+                </Button>
+              </Left>
+            </CardItem>
+          </Card>
         </Content>
       </Container>
     );
   }
 }
 
-export default AccordionDefault;
+export default NHCardShowcase;

@@ -32,6 +32,7 @@ class SkillProgramming extends Component {
           <Body>
             <Title>Programming</Title>
           </Body>
+          <Right />
         </Header>
 
         <Content padder>
