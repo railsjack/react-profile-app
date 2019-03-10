@@ -18,7 +18,7 @@ import styles from "./styles";
 const datas = [
 	{
 		route: "SkillFrameworks",
-		text: "Frameworks bnd Tools",
+		text: "Frameworks and Tools",
 		icon: "md-business"
 	},
 	{

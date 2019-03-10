@@ -37,7 +37,9 @@ class SkillFrameworks extends Component {
 
         <Content padder>
           <Card style={styles.mb}>
-            
+            <CardItem header>
+              <H3>FRAMEWORKS & TOOLS</H3>
+            </CardItem>
             <CardItem>
               <Left>
                 <Text>

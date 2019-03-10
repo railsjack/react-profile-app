@@ -37,6 +37,9 @@ class SkillProgramming extends Component {
 
         <Content padder>
           <Card style={styles.mb}>
+            <CardItem header>
+              <H3>Programming</H3>
+            </CardItem>
             <CardItem>
               <Left>
                 <Text>

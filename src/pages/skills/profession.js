@@ -37,6 +37,9 @@ class SkillProfession extends Component {
 
         <Content padder>
           <Card style={styles.mb}>
+            <CardItem header>
+              <H3>Professional Skills</H3>
+            </CardItem>
             <CardItem>
               <Left>
                 <Text>

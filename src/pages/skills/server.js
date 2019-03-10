@@ -38,6 +38,9 @@ class SkillServer extends Component {
 
         <Content padder>
           <Card style={styles.mb}>
+            <CardItem header>
+              <H3>Server & Networking</H3>
+            </CardItem>
             <CardItem>
               <Left>
                 <Text>
