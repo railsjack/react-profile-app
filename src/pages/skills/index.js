@@ -30,7 +30,9 @@ class Skills extends Component {
 			<Container>
 				<Header>
 					<Left>
-						<Button onPress={ ()=> this.props.navigation.openDrawer() }>
+						<Button 
+							transparent
+							onPress={ ()=> this.props.navigation.openDrawer() }>
 							<Icon name="menu"></Icon>
 						</Button>
 					</Left>
