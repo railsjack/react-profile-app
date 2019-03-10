@@ -8,5 +8,10 @@ export default {
   },
   mb: {
     marginBottom: 15
+  },
+  cardItem: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#ccc",
+    borderBottomStyle: "solid"
   }
 };
