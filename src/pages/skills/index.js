@@ -35,8 +35,14 @@ const datas = [
 		route: "SkillProfession",
 		text: "Professional Skills",
 		icon: "md-code"
+	},
+	{
+		route: "SkillApi",
+		text: "API Integration",
+		icon: "ios-construct"
 	}
 ];
+
 
 class Skills extends Component {
 	render() {

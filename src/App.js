@@ -8,6 +8,7 @@ import SkillFrameworks from "./pages/skills/frameworks";
 import SkillProgramming from "./pages/skills/programming";
 import SkillServer from "./pages/skills/server";
 import SkillProfession from "./pages/skills/profession";
+import SkillApi from "./pages/skills/api";
 import Experiences from "./pages/experiences/";
 
 import SideBar from "./pages/sidebar";
@@ -35,6 +36,7 @@ const AppNavigator = createStackNavigator(
 		SkillProgramming: { screen: SkillProgramming },
 		SkillServer: { screen: SkillServer },
 		SkillProfession: { screen: SkillProfession },
+		SkillApi: { screen: SkillApi },
 	},
 	{
 		initialRouteName: "Drawer",

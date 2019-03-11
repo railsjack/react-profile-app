@@ -35,12 +35,6 @@ const datas = [
     bg: "#C5F442"
   },
   {
-    name: "API Integration",
-    route: "Api",
-    icon: "ios-settings",
-    bg: "#C5F442"
-  },
-  {
     name: "Contact me",
     route: "Contact",
     icon: "ios-contact",
