@@ -25,6 +25,9 @@
     "ios": "react-native run-ios --simulator='iPhone 6s'",
     "link-assets": "./link-assets.sh",
     "eject": "rm -Rf android && rm -Rf ios && react-native eject && react-native link && yarn link-assets",
+    "refresh-ios": "yarn eject && yarn ios",
+    "link-assets-win": "link-assets.cmd",
+    "eject": "rm -Rf android && rm -Rf ios && react-native eject && react-native link && yarn link-assets",
     "refresh-ios": "yarn eject && yarn ios"
   },
   "jest": {
