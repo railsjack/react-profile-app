@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image } from "react-native";
+import { Image, Linking } from "react-native";
 import {
   Content,
   Text,
@@ -33,14 +33,16 @@ const datas = [
     route: "Skills",
     icon: "ios-thumbs-up",
     bg: "#C5F442"
-  },
+  }/*,
   {
     name: "Contact me",
     route: "Contact",
     icon: "ios-contact",
     bg: "#C5F442"
-  }
+  }*/
 ];
+
+const profileLink = "https://nahrae-jin.herokuapp.com/#form1-n";
 
 class SideBar extends Component {
   constructor(props) {
@@ -96,6 +98,24 @@ class SideBar extends Component {
                   </Right>}
               </ListItem>}
           />
+          <List>
+              <ListItem
+                    button
+                    noBorder
+                    onPress={() => Linking.openURL( profileLink )}
+                  >
+                <Left>
+                  <Icon
+                    active
+                    name="ios-contact"
+                    style={{ color: "#777", fontSize: 26, width: 30 }}
+                  />
+                  <Text style={styles.text}>
+                    Contact me
+                  </Text>
+                </Left>
+              </ListItem>
+          </List>
         </Content>
       </Container>
     );

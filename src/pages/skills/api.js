@@ -98,7 +98,7 @@ class SkillApi extends Component {
                 color1 = colors[Math.floor(Math.random()*colors.length)];
                 color2 = colors[Math.floor(Math.random()*colors.length)];
                 return(
-                  <Row style={styles.row} key={"icon-row-${i}"} >
+                  <Row style={styles.row} key={"icon-row-"+i} >
                     <Col style={styles.col}><Icon name={icon0} style={{ color: color0 }} /><Text numberOfLines={1} style={styles.iconText}>{text0}</Text></Col>
                     <Col style={styles.col}><Icon name={icon1} style={{ color: color1 }} /><Text numberOfLines={1} style={styles.iconText}>{text1}</Text></Col>
                     <Col style={styles.col}><Icon name={icon2} style={{ color: color2 }} /><Text numberOfLines={1} style={styles.iconText}>{text2}</Text></Col>
