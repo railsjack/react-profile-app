@@ -1,0 +1,3 @@
+keytool -genkey -v -keystore jinnahrae.keystore -alias jinnahrae_alias -keyalg RSA -keysize 2048 -validity 10000
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore jinnahrae.keystore CorrLinks.apk corrlinks_alias
+jarsigner -verify -verbose -certs CorrLinks.apk

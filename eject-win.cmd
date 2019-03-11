@@ -1,9 +1,9 @@
 @echo off
 
-del /s /q android
-rd /s /q android
-del /s /q ios
-rd /s /q ios
+del /S /Q /F android
+rd /S /Q android
+del /S /Q ios
+rd /S /Q ios
 
 react-native eject
 react-native link
