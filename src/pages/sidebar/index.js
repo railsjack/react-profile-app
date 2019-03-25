@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Image, Linking } from "react-native";
+import firebase from "react-native-firebase";
 import {
   Content,
   Text,
@@ -51,6 +52,12 @@ class SideBar extends Component {
       shadowOffsetWidth: 1,
       shadowRadius: 4
     };
+  }
+
+
+  handleLogout = () =>{
+    console.log('logout');
+    firebase.auth().signOut();
   }
 
   render() {
@@ -112,6 +119,22 @@ class SideBar extends Component {
                   />
                   <Text style={styles.text}>
                     Contact me
+                  </Text>
+                </Left>
+              </ListItem>
+              <ListItem
+                    button
+                    noBorder
+                    onPress={this.handleLogout}
+                  >
+                <Left>
+                  <Icon
+                    active
+                    name="ios-exit"
+                    style={{ color: "#777", fontSize: 26, width: 30 }}
+                  />
+                  <Text style={styles.text}>
+                    Logout
                   </Text>
                 </Left>
               </ListItem>

@@ -27,7 +27,8 @@
     "refresh-ios": "rm -Rf android && rm -Rf ios && react-native eject && react-native link && yarn link-assets",
     "assets-win": "link-assets.cmd",
     "eject-win": "eject-win.cmd & react-native eject & react-native link & link-assets.cmd",
-    "build-android": "cd android && gradlew.bat assembleRelease && cd .. && sign.cmd"
+    "build-android": "cd android && gradlew.bat assembleRelease && cd .. && sign.cmd",
+    "clean-android": "cd android && call gradlew.bat clean && cd .."
   },
   "jest": {
     "preset": "react-native",
@@ -44,6 +45,7 @@
     "prop-types": "^15.6.2",
     "react": "16.6.3",
     "react-native": "^0.58.6",
+    "react-native-firebase": "^5.2.3",
     "react-native-gesture-handler": "^1.0.15",
     "react-native-progress": "^3.5.0",
     "react-native-vector-icons": "^6.3.0",
