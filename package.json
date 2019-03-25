@@ -46,9 +46,11 @@
     "react-native-firebase": "^5.2.3",
     "react-native-gesture-handler": "^1.0.15",
     "react-native-progress": "^3.5.0",
+    "react-native-swift": "^1.2.2",
     "react-native-vector-icons": "^6.3.0",
     "react-navigation": "3.3.0",
     "scheduler": "^0.12.0",
     "styled-components": "^3.4.5"
-  }
+  },
+  "isSwift": true
 }
